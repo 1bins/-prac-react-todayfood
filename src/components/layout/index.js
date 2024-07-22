@@ -1,7 +1,7 @@
 import {Outlet} from "react-router-dom";
 import {useEffect, useState} from "react";
 import classNames from "classnames/bind";
-import {WeatherModule} from "../../utils";
+import {WeatherModule} from "../../utils/getWeather";
 
 const Layout = () => {
   const [temp, setTemp] = useState(0);
