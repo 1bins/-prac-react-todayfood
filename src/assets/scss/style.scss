@@ -160,7 +160,7 @@ main {background: #f1e5d7;}
         backface-visibility: hidden;
 
         &.card-front {
-          padding: 1.7rem 1.75rem 0;
+          padding: 1.7rem 1.5rem 0;
           transform: rotateY(180deg);
           background: #fff;
 
@@ -170,10 +170,10 @@ main {background: #f1e5d7;}
           }
 
           .cont-box {
-            margin: 1.65rem 0 1.9rem;
+            margin: 1.35rem 0 1.1rem;
             text-align: center;
             @media screen and (min-width: 768px){
-              margin-top: 2.5rem;
+              margin: 2.5rem 0 1.3rem;
             }
 
             .dsc {
@@ -200,6 +200,9 @@ main {background: #f1e5d7;}
               background: #f6f6f6;
               border-radius: 0.4rem;
               text-align: center;
+              @media screen and (min-width: 768px){
+                height: 4.3rem;
+              }
             }
           }
         }
