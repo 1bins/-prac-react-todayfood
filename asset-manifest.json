@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/-prac-react-todayfood/static/css/main.be3464f6.css",
+    "main.css": "/-prac-react-todayfood/static/css/main.2382f035.css",
     "main.js": "/-prac-react-todayfood/static/js/main.86c88532.js",
     "static/media/hero-sunny.png": "/-prac-react-todayfood/static/media/hero-sunny.e8f17d2c623fbcd3d050.png",
     "static/media/hero-rainy.png": "/-prac-react-todayfood/static/media/hero-rainy.d4b02694d8e6561e63be.png",
@@ -27,11 +27,11 @@
     "static/media/ramyeon.jpg": "/-prac-react-todayfood/static/media/ramyeon.cd7116decc4d68209e07.jpg",
     "static/media/udon.jpg": "/-prac-react-todayfood/static/media/udon.8a1296094e679dedc64a.jpg",
     "index.html": "/-prac-react-todayfood/index.html",
-    "main.be3464f6.css.map": "/-prac-react-todayfood/static/css/main.be3464f6.css.map",
+    "main.2382f035.css.map": "/-prac-react-todayfood/static/css/main.2382f035.css.map",
     "main.86c88532.js.map": "/-prac-react-todayfood/static/js/main.86c88532.js.map"
   },
   "entrypoints": [
-    "static/css/main.be3464f6.css",
+    "static/css/main.2382f035.css",
     "static/js/main.86c88532.js"
   ]
 }
