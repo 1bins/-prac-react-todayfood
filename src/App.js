@@ -1,10 +1,12 @@
 import './assets/scss/style.scss'
 import Router from "./router";
+import {WeatherProvider} from "./store/context";
 
-function App() {
+const App = () => {
   return (
-    <Router />
+      <WeatherProvider>
+        <Router />
+      </WeatherProvider>
   );
 }
-
 export default App;
