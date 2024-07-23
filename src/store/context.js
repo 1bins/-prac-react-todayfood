@@ -32,9 +32,10 @@ export const WeatherProvider = ({ children }) => {
     const lastFetchTime = localStorage.getItem('timeData');
 
     if(storedData && lastFetchTime){
+      const nowHour = new Date().getHours();
       const lastHour = new Date(lastFetchTime).getHours();
 
-      if(new Date().getHours() > lastHour){
+      if(nowHour > lastHour){
         fetchWeather();
       }else {
         setWeather(JSON.parse(storedData));
