@@ -1,6 +1,7 @@
 import {useContext, useState} from "react";
 import classNames from "classnames/bind";
 import {WeatherContext} from "../../store/context";
+import Button from "../button";
 
 const Card = ({name, description, imgSrc, isOpen}) => {
   const {isRainy} = useContext(WeatherContext)
@@ -21,7 +22,7 @@ const Card = ({name, description, imgSrc, isOpen}) => {
               <p className="name -font-st">{name}</p>
             </div>
             <div className="button-box">
-              <button type={"button"}>근처 맛집검색</button>
+              <Button>근처 맛집검색</Button>
             </div>
           </div>
         </div>
