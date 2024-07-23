@@ -106,7 +106,8 @@ export const WeatherModule = (() => {
       const weatherData = await getWeather(latX, lonY, today, nowTime);
       return weatherData;
     } catch (tempData) {
-      const weatherData = await getWeather(60, 127, today, nowTime)
+      const { x: latX, y: lonY } = dfs_xy_conv("toXY", 37.5664056, 126.9778222);
+      const weatherData = await getWeather(latX, lonY, today, nowTime)
       return weatherData;
     }
   };
