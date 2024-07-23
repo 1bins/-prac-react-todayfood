@@ -5,8 +5,9 @@ import Card from "../../components/card";
 import {WeatherContext} from "../../store/context";
 
 const Home = () => {
-  const {isRainy, temp} = useContext(WeatherContext);
+  // ** state
   const [opendCard, setOpendCard] = useState(0);
+  const {isRainy, temp} = useContext(WeatherContext);
 
   const filteredFoods = useMemo(() => {
     const foodList =  foods.filter(food => food.isRainy === isRainy);
@@ -21,7 +22,7 @@ const Home = () => {
 
   return(
       <>
-        {/*<Intro/>*/}
+        <Intro/>
         <section id="home">
           <div className="home-inner">
             <section id="hero">

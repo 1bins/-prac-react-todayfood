@@ -2,14 +2,59 @@
 
 // setting
 $keyColor: #fc862f;
+$maxWidth: 480px;
 .-key-color {color: $keyColor}
 
 // main
 main {background: #f1e5d7;}
 .main {
-  max-width: 450px;
+  max-width: $maxWidth;
   margin: 0 auto;
   background: #f5f4ee;
+}
+
+// intro
+.intro-inner {
+  position: fixed;
+  width: 100%; height: 100vh;
+  max-width: $maxWidth;
+  color: #fff;
+  background: $keyColor;
+  z-index: 99;
+
+  .intro-cont-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+    h3 {
+      font-size: 8.2rem;
+      font-weight: normal;
+      line-height: 1.1;
+    }
+    .cont {
+      margin: 2.4rem 0 3.8rem;
+      font-size: 2.2rem;
+
+      span {
+        display: block;
+        margin-top: 0.6rem;
+        font-size: 1.4rem;
+        opacity: .8;
+      }
+    }
+    button {
+      width: 24rem;
+      height: 5.6rem;
+      font-size: 1.7rem; color: $keyColor;
+      font-weight: 700;
+      background: #fff;
+      border-radius: 5.6rem;
+    }
+  }
 }
 
 // hero
@@ -18,10 +63,16 @@ main {background: #f1e5d7;}
   padding: 1.95rem 1.6rem 12.4rem;
   color: #fff;
   background: $keyColor;
+  @media screen and (min-width: 768px){
+    padding: 2.8rem 2.6rem 12.4rem;
+  }
 
   h3 {
     font-size: 2.1rem;
     font-weight: normal;
+    @media screen and (min-width: 768px){
+      font-size: 3rem;
+    }
   }
 
   .hero-cont-box {
@@ -30,6 +81,9 @@ main {background: #f1e5d7;}
     .dsc {
       margin-bottom: 1.5rem;
       font-size: 1.5rem;
+      @media screen and (min-width: 768px){
+        font-size: 1.7rem;
+      }
     }
     .temp-box {
       display: flex;
@@ -118,6 +172,9 @@ main {background: #f1e5d7;}
           .cont-box {
             margin: 1.65rem 0 1.9rem;
             text-align: center;
+            @media screen and (min-width: 768px){
+              margin-top: 2.5rem;
+            }
 
             .dsc {
               font-size: 1.2rem;
@@ -126,6 +183,9 @@ main {background: #f1e5d7;}
               margin-top: 0.7rem;
               font-size: 2.1rem;
               color: $keyColor;
+              @media screen and (min-width: 768px){
+                font-size: 2.6rem;
+              }
             }
           }
 
@@ -150,6 +210,17 @@ main {background: #f1e5d7;}
   $keyColor: #3d5b81;
   .-key-color {color: $keyColor}
 
+  // intro
+  .intro-inner {
+    background: $keyColor;
+
+    .intro-cont-box {
+      button {
+        color: $keyColor;
+      }
+    }
+  }
+
   // hero
   .hero-inner {
     background: $keyColor;
@@ -161,116 +232,6 @@ main {background: #f1e5d7;}
       .card {
         .cont-box {
           .name {color: $keyColor;}
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px){
-  // hero
-  .hero-inner {
-    padding: 2.8rem 2.6rem 12.4rem;
-
-    h3 {
-      font-size: 3rem;
-    }
-
-    .hero-cont-box {
-      .dsc {
-        font-size: 1.7rem;
-      }
-    }
-  }
-
-  // card
-  .card-inner {
-    display: flex;
-    padding: 6.7rem 1.6rem 5.2rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: hidden;
-    gap: 1.3rem 0;
-
-    .card-area {
-      width: 48.1%;
-      perspective: 800px;
-      cursor: pointer;
-
-      .card {
-        display: inline-grid;
-        transform: rotateY(0deg);
-        transform-style: preserve-3d;
-        transition: transform 0.3s;
-        user-select: none;
-
-        &.rotated {
-          transform: rotateY(180deg);
-        }
-
-        .card-cont {
-          grid-area: 1 / 1 / 1 / 1;
-          border-radius: 1.4rem;
-          overflow: hidden;
-          backface-visibility: hidden;
-
-          &.card-front {
-            padding: 1.7rem 1.75rem 0;
-            transform: rotateY(180deg);
-            background: #fff;
-
-            .img-box {
-              border-radius: 0.7rem;
-              overflow: hidden;
-            }
-
-            .cont-box {
-              margin: 1.65rem 0 1.9rem;
-              text-align: center;
-
-              .dsc {
-                font-size: 1.2rem;
-              }
-              .name {
-                margin-top: 0.7rem;
-                font-size: 2.1rem;
-                color: $keyColor;
-              }
-            }
-
-            .button-box {
-              button {
-                width: 100%; height: 3.6rem;
-                font-size: 1.4rem;
-                color: #878787;
-                background: #f6f6f6;
-                border-radius: 0.4rem;
-                text-align: center;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // rainy
-  .main.--rainy {
-    $keyColor: #3d5b81;
-    .-key-color {color: $keyColor}
-
-    // hero
-    .hero-inner {
-      background: $keyColor;
-    }
-
-    // card
-    .card-inner {
-      .card-area {
-        .card {
-          .cont-box {
-            .name {color: $keyColor;}
-          }
         }
       }
     }
