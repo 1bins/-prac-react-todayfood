@@ -1,4 +1,10 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+  font-family: 'HSSanTokki20-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -28,26 +34,6 @@ body {
   height: 100%;
   font-size: 10px;
   font-family: 'Pretendard', sans-serif;
-
-  @media (max-width: 320px) {
-    font-size: 5px;
-  }
-
-  @media (min-width: 321px) and (max-width: 375px) {
-    font-size: 6px;
-  }
-
-  @media (min-width: 376px) and (max-width: 414px) { // 중간 작은 화면 (예: iPhone 11, 12)
-    font-size: 7px;
-  }
-
-  @media (min-width: 415px) and (max-width: 720px) { // 큰 화면 (예: iPad)
-    font-size: 8px;
-  }
-
-  @media (min-width: 721px) and (max-width: 1079px) {
-    font-size: 9px;
-  }
 }
 
 ul,
@@ -112,4 +98,8 @@ input:-webkit-autofill:active {
   vertical-align: top;
   width: 100%;
   height: auto;
+}
+
+.-font-st {
+  font-family: 'HSSanTokki20-Regular';
 }
