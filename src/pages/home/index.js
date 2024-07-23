@@ -2,12 +2,12 @@ import Intro from "../intro";
 import {useContext, useMemo, useState} from "react";
 import {foods} from "../../database/foods";
 import Card from "../../components/card";
-import {WeatherContext} from "../../store/context";
+import {Context} from "../../store/context";
 
 const Home = () => {
   // ** state
   const [opendCard, setOpendCard] = useState(0);
-  const {isRainy, temp} = useContext(WeatherContext);
+  const {isRainy, temp} = useContext(Context);
 
   const filteredFoods = useMemo(() => {
     const foodList =  foods.filter(food => food.isRainy === isRainy);
