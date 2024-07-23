@@ -1,11 +1,21 @@
 import {useContext, useState} from "react";
 import classNames from "classnames/bind";
-import {WeatherContext} from "../../store/context";
+import {Context} from "../../store/context";
 import Button from "../button";
+import {useNavigate} from "react-router-dom";
 
 const Card = ({name, description, imgSrc, isOpen}) => {
-  const {isRainy} = useContext(WeatherContext)
+  // ** state
+  const {isRainy} = useContext(Context)
   const [cardOpend, setCardOpened] = useState(isOpen);
+
+  // ** variables
+  const navigate = useNavigate();
+  const handleButtonClick = (event) => {
+    // 이벤트 버블링 방지
+    event.stopPropagation();
+    window.open(`https://map.kakao.com/link/search/${name}`, '_blank');
+  }
 
   return(
       <div className="card-area" onClick={() => setCardOpened(!cardOpend)}>
@@ -22,7 +32,7 @@ const Card = ({name, description, imgSrc, isOpen}) => {
               <p className="name -font-st">{name}</p>
             </div>
             <div className="button-box">
-              <Button>근처 맛집검색</Button>
+              <Button onClick={handleButtonClick}>근처 맛집검색</Button>
             </div>
           </div>
         </div>

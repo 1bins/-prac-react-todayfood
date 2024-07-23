@@ -178,6 +178,9 @@ main {background: #f1e5d7;}
 
             .dsc {
               font-size: 1.2rem;
+              @media screen and (min-width: 768px){
+                font-size: 1.3rem;
+              }
             }
             .name {
               margin-top: 0.7rem;
