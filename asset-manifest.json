@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/-prac-react-todayfood/static/css/main.be3464f6.css",
+    "main.js": "/-prac-react-todayfood/static/js/main.86c88532.js",
+    "static/media/hero-sunny.png": "/-prac-react-todayfood/static/media/hero-sunny.e8f17d2c623fbcd3d050.png",
+    "static/media/hero-rainy.png": "/-prac-react-todayfood/static/media/hero-rainy.d4b02694d8e6561e63be.png",
+    "static/media/food-card-back.jpg": "/-prac-react-todayfood/static/media/food-card-back.924af71f21e771373d27.jpg",
+    "static/media/food-card-back_rainy.jpg": "/-prac-react-todayfood/static/media/food-card-back_rainy.13c091e480806f599c33.jpg",
+    "static/media/budaejjigae.jpg": "/-prac-react-todayfood/static/media/budaejjigae.526f77be50d1d25fed91.jpg",
+    "static/media/taco.jpg": "/-prac-react-todayfood/static/media/taco.0785bddf83b8aeb74691.jpg",
+    "static/media/pasta.jpg": "/-prac-react-todayfood/static/media/pasta.1cd7ee1a0fd51e41b3c3.jpg",
+    "static/media/bulgogi.jpg": "/-prac-react-todayfood/static/media/bulgogi.fba05a65e443f624add1.jpg",
+    "static/media/tteokbokki.jpg": "/-prac-react-todayfood/static/media/tteokbokki.7ae4fe7e49ed9ae3540b.jpg",
+    "static/media/jajangmyeon.jpg": "/-prac-react-todayfood/static/media/jajangmyeon.f498379d4b61adf8d476.jpg",
+    "static/media/sushi.jpg": "/-prac-react-todayfood/static/media/sushi.1ff0d03cf2c64268753a.jpg",
+    "static/media/chicken.jpg": "/-prac-react-todayfood/static/media/chicken.41ef91dc85b4981e1aaf.jpg",
+    "static/media/coldnoodles.jpg": "/-prac-react-todayfood/static/media/coldnoodles.848ffa20ccef2c6e2899.jpg",
+    "static/media/bibimbab.jpg": "/-prac-react-todayfood/static/media/bibimbab.9837027cb682843d4999.jpg",
+    "static/media/jjambbong.jpg": "/-prac-react-todayfood/static/media/jjambbong.c64aff4e91189fc4a0f4.jpg",
+    "static/media/hamburger.jpg": "/-prac-react-todayfood/static/media/hamburger.a2218381b4c476e742dd.jpg",
+    "static/media/gukbab.jpg": "/-prac-react-todayfood/static/media/gukbab.c97818f3d0eb408df822.jpg",
+    "static/media/ramen.jpg": "/-prac-react-todayfood/static/media/ramen.d0627368a125c5454d3f.jpg",
+    "static/media/ricenoodles.jpg": "/-prac-react-todayfood/static/media/ricenoodles.b007e1cac65e363ec848.jpg",
+    "static/media/kimchijjigae.jpg": "/-prac-react-todayfood/static/media/kimchijjigae.10dbb9202815490d7604.jpg",
+    "static/media/gyudon.jpg": "/-prac-react-todayfood/static/media/gyudon.b9742ee1adba4e962932.jpg",
+    "static/media/galbitang.jpg": "/-prac-react-todayfood/static/media/galbitang.0fd7108e732123229517.jpg",
+    "static/media/ramyeon.jpg": "/-prac-react-todayfood/static/media/ramyeon.cd7116decc4d68209e07.jpg",
+    "static/media/udon.jpg": "/-prac-react-todayfood/static/media/udon.8a1296094e679dedc64a.jpg",
+    "index.html": "/-prac-react-todayfood/index.html",
+    "main.be3464f6.css.map": "/-prac-react-todayfood/static/css/main.be3464f6.css.map",
+    "main.86c88532.js.map": "/-prac-react-todayfood/static/js/main.86c88532.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be3464f6.css",
+    "static/js/main.86c88532.js"
+  ]
+}
