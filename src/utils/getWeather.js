@@ -88,10 +88,10 @@ export const WeatherModule = (() => {
         case '00':
           return response.data.response.body.items.item;
         default:
-          alert('error!') // server error (기상청)
+          alert('현재 기상청 서비스에 문제가 있습니다.\n잠시 후 다시 이용해주세요.') // server error (기상청)
       }
     } catch(error){
-      alert('error!'); // client error (ex APIKEY)
+      alert('기상청 데이터 연결에 실패하였습니다.\n잠시 후 다시 이용해주세요.');
     }
   }
 
